@@ -29,3 +29,9 @@ Route::get('buku/{id}', [bukucon::class, 'search']);
 Route::post('buku', [bukucon::class, 'sculpt']);
 Route::patch('buku/{id}', [bukucon::class, 'update']);
 Route::delete('buku/{id}', [bukucon::class, 'destroy']);
+
+Route::get('jurusan', [jurucon::class, 'summon']);
+Route::get('jurusan/{id}', [jurucon::class, 'search']);
+Route::post('jurusan', [jurucon::class, 'sculpt']);
+Route::patch('jurusan/{id}', [jurucon::class, 'update']);
+Route::delete('jurusan/{id}', [jurucon::class, 'destroy']);
